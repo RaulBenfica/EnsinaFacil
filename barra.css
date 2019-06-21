@@ -1,0 +1,37 @@
+progress {
+    display:block;
+    -webkit-appearance: none;
+	height:50px;
+	width:1200px;
+	
+}
+progress::-webkit-progress-bar {
+    background:DodgerBlue;
+    border-radius: 20px;
+    padding: 10px;
+}
+progress::-moz-progress-bar {  
+    background: black;
+    border-radius: 20px;
+    padding: 20px;
+}
+progress::-webkit-progress-value {
+    border-radius: 5px;
+    background:Yellow;	
+}
+span{
+    width:0;
+    height:0;
+    border:130px solid transparent;
+    display:block;
+}
+span.colorido{  
+    border-left-color:DodgerBlue; 
+}
+span.colorido2{  
+    border-right-color:DodgerBlue; 
+}
+.escondido{
+	display:none;
+}
+

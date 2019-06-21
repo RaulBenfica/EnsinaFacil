@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>Ensina Fácil</title>
+<meta charset="UTF-8">
+<meta name="viewport"  content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" type="text/css" href="barra.css"/>
+<script src="hidediv.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Fechar Menu</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Exercícios</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Sobre</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">&#9776;</div>
+    <div class="w3-right w3-padding-16">&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+    <div class="w3-center w3-padding-16">Ensina Fácil</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food"> 
+        <progress  style="width:100%"  id="minhaBarra" value="0" max="70"></progress>
+			
+  </div>
+  
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            
+			<div id="Div1">
+			    <p class="w3-xxxlarge">Mix strawberry and mango, and make a good juice.</p>	
+				<span class="w3-left colorido2" id="paraDiv1" onclick="voltar(),mostrarDiv1()"></span>
+                <span class="w3-right colorido" id="paraDiv2" onclick="next(), mostrarDiv2()"></span>			            				
+				<img src="w3images/Mango-Strawberry-Daiquiris-6.jpg" >								
+			    <p class="w3-xxxlarge">Misture morango e manga, e faça um bom suco.</p>												    
+			</div>
+  
+			<div id="Div2">
+			    <p class="w3-xxxlarge">Mix </p>
+				<span class="w3-left colorido2" id="paraDiv1" onclick="voltar(), mostrarDiv1()"></span>
+				<span class="w3-right colorido" id="paraDiv3" onclick="next(), mostrarDiv3()"></span>                
+				<img src="w3images/receita-natural-para-dormir (1).jpg" >								
+			    <p class="w3-xxxlarge">Misturar </p>												    
+			</div>
+			
+			<div id="Div3">
+			    <p class="w3-xxxlarge">Strawberry </p>
+				<span class="w3-left colorido2" id="paraDiv2" onclick="voltar(), mostrarDiv2()"></span>
+				<span class="w3-right colorido" id="paraDiv3" onclick="next(), mostrarDiv4()"></span>         
+				<img src="w3images/e91fadc2ffb0164250719d6a5c76d6ba.jpg">								
+			    <p class="w3-xxxlarge">Morango</p>												    
+			</div>
+			
+			<div id="Div4">
+			    <p class="w3-xxxlarge">Mango </p>
+				<span class="w3-left colorido2" id="paraDiv3" onclick="voltar(), mostrarDiv3()"></span>
+				<span class="w3-right colorido" id="paraDiv5" onclick="next(), mostrarDiv5()"></span>         
+				<img src="w3images/mango-1982330_1280 (2).jpg"  >								
+			    <p class="w3-xxxlarge">Manga</p>												    
+			</div>
+			
+     		<div id="Div5">
+			    <p class="w3-xxxlarge"> And make a<p>
+				<span class="w3-left colorido2" id="paraDiv4" onclick="voltar(), mostrarDiv4()"></span>
+				<span class="w3-right colorido" id="paraDiv6" onclick="next(), mostrarDiv6()"></span>         
+				<img src="w3images/vegetable-juice-raw-food (1).jpg" >								
+			    <p class="w3-xxxlarge"> E faça um<p>												    
+			</div>
+			
+			<div id="Div6">
+			    <p class="w3-xxxlarge">Good</p>
+				<span class="w3-left colorido2" id="paraDiv5" onclick="voltar(), mostrarDiv5()"></span>
+				<span class="w3-right colorido" id="paraDiv7" onclick="next(), mostrarDiv7()"></span>         
+				<img src="w3images/Good-PNG-Transparent (1).png"  >								
+			    <p class="w3-xxxlarge">Bom</p>												    
+			</div>
+			
+			<div id="Div7">
+			    <p class="w3-xxxlarge">Juice</p>
+				<span class="w3-left colorido2" id="paraDiv5" onclick="voltar(), mostrarDiv6()"></span>
+				<span class="w3-right colorido" id="paraDiv8" onclick="next(), mostrarDiv8()"></span>         
+				<img src="w3images/orange-juice-67556_640 (1).jpg" >								
+			    <p class="w3-xxxlarge">Suco</p>												    
+			</div>
+			
+			<div id="Certo">
+			    <p class="w3-xxxlarge">Meus parabéns. Você acertou!!!!</p>         
+				<img src="w3images/Mango-Strawberry-Daiquiris-6.jpg" style="width:25%">								
+			    <a href="Alimentos.html" ><p class="w3-xxxlarge"><u>Você pode progredir para a proxima aula clicando nesta frase.</u></p></a>												    
+			</div>
+			
+		   <div id="Errado">
+			    <p class="w3-xxxlarge">Você errou, mas não se preocupe. Tente quantas vezes quiser</p>        
+				<img src="w3images/Mango-Strawberry-Daiquiris-6.jpg" style="width:22%">								
+			    <a onclick="mostrarDiv1(), zerar()"><u><p class="w3-xxxlarge">Clicando nesta frase você pode fazer esta aula desde o início.</u></p></a>												    
+			</div>
+			
+	<div class="w3-row-padding w3-padding-16 w3-center" id="Div8">
+            <h2><b>Para responder a questão, clique na frase ou imagem corespondente a frase:</b></h2>
+	        <p class="w3-xxxlarge"><u>Mix strawberry and mango, and make a good juice.</u></p>
+            <div class="w3-quarter" id="RespostaCerta" onclick="mostrarCerto()">
+                <a href="#"><img src="w3images/Mango-Strawberry-Daiquiris-6.jpg" alt="Sandwich" style="width:100%">
+                <h3>Misture morango e manga, e faça um bom suco.</h3></a>
+            </div>
+            <div class="w3-quarter" id="RespostaErrada" onclick="mostrarErrado()">
+                <a href="#"><img src="w3images/orange-juice-67556_640 (1).jpg" alt="Steak" style="width:100%">
+                <h3>Misture morango e laranja, e faça um bom suco.</h3></a>
+            </div>
+            <div class="w3-quarter" id="RespostaErrada" onclick="mostrarErrado()">
+                <a href="#"><img src="w3images/receita-natural-para-dormir (1).jpg" alt="Cherries" style="width:100%">
+                <h3>Misturar é um passo comum em receitas. </h3></a>
+            </div>
+            <div class="w3-quarter" id="RespostaErrada" onclick="mostrarErrado()">
+               <a href="#"><img src="w3images/lemonade-3468107_640.jpg" alt="Pasta and Wine" style="width:100%">
+               <h3>Misture limão, água e áçucar para fazer um suco.</h3></a>
+            </div>
+    </div>
+      
+<!-- End page content -->
+</div>
+
+<script>
+
+function next() {
+		document.getElementById("minhaBarra").value = document.getElementById("minhaBarra").value + 10;
+		
+}
+function voltar() {
+		document.getElementById("minhaBarra").value = document.getElementById("minhaBarra").value - 10;				
+}
+function zerar() {
+		document.getElementById("minhaBarra").value = document.getElementById("minhaBarra").value == 0;
+		
+}
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
